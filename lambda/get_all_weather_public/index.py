@@ -4,6 +4,7 @@ import boto3
 dynamodb_client = boto3.client('dynamodb')
 
 def lambda_handler(event, context):
+    print("aaaaaaaaaaaaaaaaaaaaaaaaaa")
     response = dynamodb_client.scan(
         TableName='simple-weather-news-table',
     )
