@@ -70,13 +70,13 @@ export class SimpleWeatherNewsCdkProjectStack extends cdk.Stack {
     
 
     // GET /{cityId} エンドポイント
-    /* Day10-02
-    const getCityIntegration = new integrations.HttpLambdaIntegration('GetCityWeatherIntegration', ); //TODO(Day10-02)
+    
+    const getCityIntegration = new integrations.HttpLambdaIntegration('GetCityWeatherIntegration', getCityWeatherPublicFunction); //TODO(Day10-02)
     httpApi.addRoutes({
-      path: '', //TODO(Day10-02)
+      path: '/{cityId}', //TODO(Day10-02)
       methods: [apigatewayv2.HttpMethod.GET],
-      integration: , //TODO(Day10-02)
+      integration: getCityIntegration, //TODO(Day10-02)
     });
-    */
+    
   }
 }
