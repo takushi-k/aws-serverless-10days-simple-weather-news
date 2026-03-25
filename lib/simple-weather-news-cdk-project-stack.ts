@@ -60,14 +60,14 @@ export class SimpleWeatherNewsCdkProjectStack extends cdk.Stack {
     
 
     // GET /all エンドポイント
-    /* Day10-01
+    
     const getAllIntegration = new integrations.HttpLambdaIntegration('GetAllWeatherIntegration', getAllWeatherPublicFunction);
     httpApi.addRoutes({
       path: '/all',
       methods: [apigatewayv2.HttpMethod.GET],
       integration: getAllIntegration,
     });
-    */
+    
 
     // GET /{cityId} エンドポイント
     /* Day10-02
